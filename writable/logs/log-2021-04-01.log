@@ -1,0 +1,13 @@
+CRITICAL - 2021-04-01 01:39:27 --> date() expects parameter 2 to be int, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects ...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\my-dream\app\Views\admin\products\product-list.php(79): date('d M y', Object(CodeIgniter\I18n\Time))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/products/...', Array, true)
+#5 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(22): view('admin/products/...', Array)
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->index()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#8 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}

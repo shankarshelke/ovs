@@ -1,0 +1,38 @@
+ERROR - 2021-02-17 08:15:14 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-02-17 08:15:14 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#2 C:\xampp\htdocs\my-dream\app\Models\IonAuthModel.php(892): CodeIgniter\Database\BaseBuilder->get()
+#3 [internal function]: App\Models\IonAuthModel->login('admin@admin.com', 'password', false)
+#4 C:\xampp\htdocs\my-dream\app\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(159): App\Libraries\IonAuth->__call('login', Array)
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-02-17 08:15:34 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-02-17 08:15:34 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#2 C:\xampp\htdocs\my-dream\app\Models\IonAuthModel.php(892): CodeIgniter\Database\BaseBuilder->get()
+#3 [internal function]: App\Models\IonAuthModel->login('admin@admin.com', 'password', false)
+#4 C:\xampp\htdocs\my-dream\app\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(159): App\Libraries\IonAuth->__call('login', Array)
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-02-17 09:15:43 --> Undefined property: App\Controllers\Auth::$input
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(705): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 705, Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_user(1)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}

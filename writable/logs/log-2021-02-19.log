@@ -1,0 +1,175 @@
+CRITICAL - 2021-02-19 10:34:01 --> Return value of App\Models\IonAuthModel::clearErrors() must be an instance of App\Models\boolean, bool returned
+#0 [internal function]: App\Models\IonAuthModel->clearErrors()
+#1 C:\xampp\htdocs\my-dream\app\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(698): App\Libraries\IonAuth->__call('clearErrors', Array)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_user(1)
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-19 10:47:18 --> Undefined variable: user
+#0 C:\xampp\htdocs\my-dream\app\Views\auth\create_user.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('App\\Views\\auth\\...', Array, true)
+#4 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(668): view('App\\Views\\auth\\...', Array)
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->create_user()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-02-19 10:54:01 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('auth/create_use...')
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('auth/create_use...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:03:04 --> Undefined offset: 0
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(626): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 626, Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->create_user()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:09:59 --> Argument 2 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Auth.php on line 888
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(888): App\Controllers\BaseController->renderPage('App\\Views\\creat...', Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->create_group()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:10:11 --> Argument 2 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Auth.php on line 888
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(888): App\Controllers\BaseController->renderPage('App\\Views\\creat...', Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->create_group()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:11:07 --> Argument 2 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Auth.php on line 888
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(888): App\Controllers\BaseController->renderPage('App\\Views\\creat...', Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->create_group()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:11:12 --> Undefined property: App\Controllers\Home::$viewsFolder
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Home.php(10): App\Controllers\BaseController->renderPage(Array)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 11:23:02 --> Invalid file: App\Views\create_group.php
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\creat...')
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('App\\Views\\creat...', Array, true)
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(889): view('App\\Views\\creat...', Array)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->create_group()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-19 11:26:43 --> Argument 2 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Auth.php on line 961
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(961): App\Controllers\BaseController->renderPage('App\\Views\\edit_...', Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_group(2)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:27:27 --> Argument 2 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Auth.php on line 961
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(961): App\Controllers\BaseController->renderPage('App\\Views\\edit_...', Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_group(2)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 11:29:00 --> Illegal string offset 'header_html'
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(962): App\Controllers\BaseController->renderPage('<!-- DEBUG-VIEW...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_group(2)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 11:29:48 --> Illegal string offset 'header_html'
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(962): App\Controllers\BaseController->renderPage('<!-- DEBUG-VIEW...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_group(2)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 11:30:05 --> Illegal string offset 'header_html'
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(962): App\Controllers\BaseController->renderPage('<!-- DEBUG-VIEW...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->edit_group(2)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 11:45:28 --> Undefined property: App\Controllers\Home::$viewsFolder
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Home.php(10): App\Controllers\BaseController->renderPage(Array)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 11:49:57 --> You must be an administrator to view this page.
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->index()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-02-19 11:50:18 --> You must be an administrator to view this page.
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->index()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-02-19 12:03:41 --> Argument 2 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Auth.php on line 529
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(529): App\Controllers\BaseController->renderPage('App\\Views\\deact...', Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->deactivate(2)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-19 12:26:13 --> Class 'IonAuth\Libraries\IonAuth' not found
+#0 [internal function]: App\Models\IonAuthModel->deactivate(2)
+#1 C:\xampp\htdocs\my-dream\app\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(546): App\Libraries\IonAuth->__call('deactivate', Array)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->deactivate(2)
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-19 12:31:27 --> Class 'IonAuth\Libraries\IonAuth' not found
+#0 [internal function]: App\Models\IonAuthModel->deactivate(2)
+#1 C:\xampp\htdocs\my-dream\app\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Auth.php(546): App\Libraries\IonAuth->__call('deactivate', Array)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->deactivate(2)
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}

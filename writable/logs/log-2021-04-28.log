@@ -1,0 +1,126 @@
+CRITICAL - 2021-04-28 05:27:53 --> Cannot declare class App\Database\Migrations\Migration_Install_products, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-04-28 05:35:34 --> mysqli_sql_exception: Too big precision 100 specified for 'start_date_time'. Maximum is 6 in D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('CREATE TABLE `e...')
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\Forge.php(525): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 D:\My Dream\My-Dream Project\OVS\app\Database\Migrations\20210427113020_install_members.php(93): CodeIgniter\Database\Forge->createTable('elections')
+#5 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(1057): App\Database\Migrations\Migration_Install_Members->up()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\My Dream\My-Dream Project\OVS\app\Controllers\Migrate.php(12): CodeIgniter\Database\MigrationRunner->latest()
+#8 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Migrate->index()
+#9 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migrate))
+#10 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#13 {main}
+CRITICAL - 2021-04-28 05:35:34 --> Too big precision 100 specified for 'start_date_time'. Maximum is 6
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('CREATE TABLE `e...')
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\Forge.php(525): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 D:\My Dream\My-Dream Project\OVS\app\Database\Migrations\20210427113020_install_members.php(93): CodeIgniter\Database\Forge->createTable('elections')
+#5 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(1057): App\Database\Migrations\Migration_Install_Members->up()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\My Dream\My-Dream Project\OVS\app\Controllers\Migrate.php(12): CodeIgniter\Database\MigrationRunner->latest()
+#8 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Migrate->index()
+#9 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Migrate))
+#10 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#13 {main}
+CRITICAL - 2021-04-28 06:29:17 --> Class 'App\Models\ElectionsModel' not found
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(908): App\Controllers\Elections->__construct()
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#5 {main}
+CRITICAL - 2021-04-28 06:31:39 --> Class 'App\Models\ElectionsModel' not found
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(908): App\Controllers\Elections->__construct()
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#5 {main}
+CRITICAL - 2021-04-28 06:31:41 --> Class 'App\Models\ElectionsModel' not found
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(908): App\Controllers\Elections->__construct()
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#5 {main}
+CRITICAL - 2021-04-28 06:31:49 --> Class 'App\Models\ElectionsModel' not found
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(908): App\Controllers\Elections->__construct()
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#5 {main}
+CRITICAL - 2021-04-28 07:16:15 --> Undefined variable: address
+#0 D:\My Dream\My-Dream Project\OVS\app\Views\admin\election\election-html.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Dream\\My-...', 48, Array)
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\My Dream\\My-...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/election/...', Array, true)
+#4 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(25): view('admin/election/...', Array)
+#5 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(45): App\Controllers\Elections->index()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Elections->addElections()
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Elections))
+#8 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#11 {main}
+CRITICAL - 2021-04-28 07:16:21 --> Undefined variable: address
+#0 D:\My Dream\My-Dream Project\OVS\app\Views\admin\election\election-html.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Dream\\My-...', 48, Array)
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\My Dream\\My-...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/election/...', Array, true)
+#4 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(25): view('admin/election/...', Array)
+#5 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(45): App\Controllers\Elections->index()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Elections->addElections()
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Elections))
+#8 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#11 {main}
+CRITICAL - 2021-04-28 07:16:22 --> Undefined variable: address
+#0 D:\My Dream\My-Dream Project\OVS\app\Views\admin\election\election-html.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Dream\\My-...', 48, Array)
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\My Dream\\My-...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/election/...', Array, true)
+#4 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(25): view('admin/election/...', Array)
+#5 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(45): App\Controllers\Elections->index()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Elections->addElections()
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Elections))
+#8 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#11 {main}
+CRITICAL - 2021-04-28 07:16:38 --> Undefined variable: address
+#0 D:\My Dream\My-Dream Project\OVS\app\Views\admin\election\election-html.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Dream\\My-...', 48, Array)
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\My Dream\\My-...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/election/...', Array, true)
+#4 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(25): view('admin/election/...', Array)
+#5 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(45): App\Controllers\Elections->index()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Elections->addElections()
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Elections))
+#8 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#11 {main}
+CRITICAL - 2021-04-28 07:17:05 --> Undefined variable: address
+#0 D:\My Dream\My-Dream Project\OVS\app\Views\admin\election\election-html.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Dream\\My-...', 48, Array)
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\My Dream\\My-...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/election/...', Array, true)
+#4 D:\My Dream\My-Dream Project\OVS\app\Controllers\Elections.php(25): view('admin/election/...', Array)
+#5 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Elections->index()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Elections))
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#10 {main}

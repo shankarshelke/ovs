@@ -1,0 +1,107 @@
+CRITICAL - 2021-03-31 00:36:04 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(79): in_array(Array, '1')
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(26): App\Controllers\Products->getCategoriesListHtml(3)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-03-31 02:46:02 --> Undefined index: source_image
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 148, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(51): App\Controllers\BaseController->resizeImg(Array)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-31 02:47:12 --> Undefined property: App\Controllers\Products::$load
+#0 C:\xampp\htdocs\my-dream\app\Controllers\BaseController.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(51): App\Controllers\BaseController->resizeImg(Array)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-31 02:49:34 --> Class 'App\Libraries\image_lib' not found
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(51): App\Controllers\BaseController->resizeImg(Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-31 03:01:54 --> The framework needs the following extension(s) installed and loaded: IMAGICK.
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Images\Handlers\ImageMagickHandler.php(55): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('IMAGICK')
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\Services.php(356): CodeIgniter\Images\Handlers\ImageMagickHandler->__construct(Object(Config\Images))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::image('imagick', Object(Config\Images), false)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\Services.php(349): CodeIgniter\Config\BaseService::getSharedInstance('image', 'imagick', NULL)
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::image('imagick')
+#5 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(51): CodeIgniter\Config\BaseService::__callStatic('image', Array)
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#8 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-31 03:03:45 --> Undefined index: GD2
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\Services.php(354): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 354, Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::image('GD2', Object(Config\Images), false)
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\Services.php(349): CodeIgniter\Config\BaseService::getSharedInstance('image', 'GD2', NULL)
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::image('GD2')
+#4 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(51): CodeIgniter\Config\BaseService::__callStatic('image', Array)
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-31 03:05:33 --> Undefined index: product_img
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-31 03:07:44 --> File not found: /
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/')
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Images\Handlers\BaseHandler.php(154): CodeIgniter\Files\File->__construct('/', true)
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(53): CodeIgniter\Images\Handlers\BaseHandler->withFile('/')
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-03-31 03:11:41 --> unlink(uploads/administrator/products/Img-29-31032121-024003.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(uploads/...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(49): unlink('uploads/adminis...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-31 03:13:12 --> File not found: public//
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('public//')
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Images\Handlers\BaseHandler.php(154): CodeIgniter\Files\File->__construct('public//', true)
+#2 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(53): CodeIgniter\Images\Handlers\BaseHandler->withFile('public//')
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-03-31 03:16:13 --> Unable to save the image. Please make sure the image and file directory are writable.
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Images\Handlers\GDHandler.php(296): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(60): CodeIgniter\Images\Handlers\GDHandler->save('uploads/adminis...')
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->save()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}

@@ -1,0 +1,90 @@
+CRITICAL - 2021-03-21 03:11:14 --> Argument 1 passed to App\Controllers\BaseController::renderPage() must be of the type bool, array given, called in C:\xampp\htdocs\my-dream\app\Controllers\Home.php on line 10
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Home.php(10): App\Controllers\BaseController->renderPage(Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 03:11:31 --> Class 'App\Controllers\QRcode' not found
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->qrcodeGenerator()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-21 03:14:32 --> Class 'App\Controllers\QRcode' not found
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->qrcodeGenerator()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-21 03:14:37 --> Class 'App\Controllers\QRcode' not found
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->qrcodeGenerator()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-21 03:20:02 --> Constant QR_MODE_NUL already defined
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Constant QR_MOD...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\my-dream\app\Libraries\phpqrcode\qrconst.php(31): define('QR_MODE_NUL', -1)
+#2 C:\xampp\htdocs\my-dream\app\Libraries\phpqrcode\qrlib.php(32): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\my-dream\vendor\composer\ClassLoader.php(476): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my-dream\vendor\composer\ClassLoader.php(344): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Libraries\\p...')
+#6 C:\xampp\htdocs\my-dream\app\Controllers\Home.php(20): spl_autoload_call('App\\Libraries\\p...')
+#7 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->qrcodeGenerator()
+#8 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-03-21 04:12:08 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(23): App\Controllers\Products->getCategoriesListHtml()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-21 05:41:27 --> Class 'App\Controllers\User' not found
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-21 05:45:08 --> Argument 1 passed to CodeIgniter\Entity::__construct() must be of the type array or null, object given, called in C:\xampp\htdocs\my-dream\app\Controllers\Products.php on line 24
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(24): CodeIgniter\Entity->__construct(Object(stdClass))
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 05:45:37 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-21 05:46:31 --> Argument 1 passed to CodeIgniter\Entity::__construct() must be of the type array or null, object given, called in C:\xampp\htdocs\my-dream\app\Controllers\Products.php on line 24
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(24): CodeIgniter\Entity->__construct(Object(stdClass))
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 05:49:51 --> Trying to get property 'name' of non-object
+#0 C:\xampp\htdocs\my-dream\app\Controllers\Products.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Products->details()
+#2 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#3 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\my-dream\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\my-dream\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}

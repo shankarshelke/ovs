@@ -1,0 +1,31 @@
+CRITICAL - 2021-04-29 03:39:40 -->  route cannot be found while reverse-routing.
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(918): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\My Dream\My-Dream Project\OVS\app\Controllers\Admin.php(24): redirect('/auth/login')
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(909): App\Controllers\Admin->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#5 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#8 {main}
+CRITICAL - 2021-04-29 04:24:10 -->  route cannot be found while reverse-routing.
+#0 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\My Dream\My-Dream Project\OVS\app\Controllers\Admin.php(24): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(909): App\Controllers\Admin->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#4 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#7 {main}
+CRITICAL - 2021-04-29 04:41:51 --> Undefined variable: category
+#0 D:\My Dream\My-Dream Project\OVS\app\Views\admin\member\member-form-html.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Dream\\My-...', 3, Array)
+#1 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\My Dream\\My-...')
+#2 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/member/me...', Array, true)
+#4 D:\My Dream\My-Dream Project\OVS\app\Controllers\Members.php(69): view('admin/member/me...', Array)
+#5 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Members->addMembersModal()
+#6 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+#7 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Dream\My-Dream Project\OVS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 D:\My Dream\My-Dream Project\OVS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\My Dream\\My-...')
+#10 {main}
